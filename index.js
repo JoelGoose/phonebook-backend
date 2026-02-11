@@ -31,7 +31,8 @@ app.get('/info', (request, response, next) => {
         .then(persons => {
             response.send(
                 `<div>Phonebook has info for ${persons.length} people</div>
-                <div>${time}</div>`
+                <div>${time}</div>
+                <div>version 1</div>`
             )
         })
         .catch(error => next(error))
