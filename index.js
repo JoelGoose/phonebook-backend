@@ -32,7 +32,7 @@ app.get('/info', (request, response, next) => {
             response.send(
                 `<div>Phonebook has info for ${persons.length} people</div>
                 <div>${time}</div>
-                <div>version 2</div>`
+                <div>version 1</div>`
             )
         })
         .catch(error => next(error))
